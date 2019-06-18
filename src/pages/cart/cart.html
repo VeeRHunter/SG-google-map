@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cart
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page7">
+  <ion-row class="button-row">
+    <button id="cart-button16" ion-button color="positive" on-click="goToSelectCategory()">
+      Main menu
+    </button>
+    <button id="cart-button11" ion-button color="positive" on-click="goToPayment()">
+      Proceed to payment
+    </button>
+  </ion-row>
+  <ion-row class="cart-list">
+    <ion-row class="each-cart" *ngFor="let list of savedCartList; let i = index">
+      <ion-col col-10>
+        <ion-row class="full-height">
+
+          <span *ngIf="!list.type">
+            {{list.venue}} : {{list.price}}$
+          </span>
+
+          <span *ngIf="list.type && list.venue=='Stationery'">
+            {{list.venue}} {{list.color}} {{list.type}} : {{list.price}}$
+          </span>
+
+          <span *ngIf="list.type && list.venue=='Electronics'">
+            {{list.venue}} {{list.brand}} {{list.type}} : {{list.price}}$
+          </span>
+
+        </ion-row>
+      </ion-col>
+      <ion-col col-2>
+        <ion-row class="full-height">
+          <ion-icon name="ios-trash" (click)="removeCart(i)"></ion-icon>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-row>
+</ion-content>

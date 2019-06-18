@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Payment
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page3">
+  <form #sendData="ngForm" id="sendData" (ngSubmit)="cartSubmit(sendData)" novalidate>
+    <ion-item id="payment-input1">
+      <ion-label>
+        Your total amount will be:
+      </ion-label>
+      <ion-input type="number" disabled placeholder="" [(ngModel)]="totalPrice" name="totalprice"></ion-input>
+    </ion-item>
+    <ion-item id="payment-input3">
+      <ion-label>
+        Select a date:
+      </ion-label>
+      <ion-input type="date" [(ngModel)]="paymentDate" required name="paymentdate" placeholder=""></ion-input>
+    </ion-item>
+    <button id="payment-button12" ion-button color="positive" block>
+      Submit
+    </button>
+  </form>
+</ion-content>

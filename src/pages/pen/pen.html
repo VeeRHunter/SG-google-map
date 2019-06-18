@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Pen
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page6">
+  <form #sendData="ngForm" id="sendData" (ngSubmit)="cartSubmit(sendData)" novalidate>
+    <ion-item id="pen-select3">
+      <ion-label>
+        Select quantity
+      </ion-label>
+      <ion-select required [(ngModel)]="sendParam.quantity" name="quantity">
+        <ion-option value="{{list}}" *ngFor="let list of quanList">
+          {{list}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item id="pen-select4">
+      <ion-label>
+        Select colour
+      </ion-label>
+      <ion-select required [(ngModel)]="sendParam.color" name="color">
+        <ion-option *ngFor="let list of colList" value="{{list}}">
+          {{list}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+    <button id="pen-button15" ion-button color="positive" block>
+      Add to cart
+    </button>
+  </form>
+</ion-content>

@@ -1,7 +1,8 @@
 {
-  "name": "google-map",
+  "name": "shopping-cart",
+  "app_id": "",
+  "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  },
-  "type": "angular"
+  }
 }
