@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "204686556491",
+    "firebase_url": "https://mapstrial-b15de.firebaseio.com",
+    "project_id": "mapstrial-b15de",
+    "storage_bucket": "mapstrial-b15de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204686556491:android:bb1af8768d6f1fba",
+        "android_client_info": {
+          "package_name": "google.maps.trial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204686556491-4gsp69v67dt168vtts3bq38sb5jok6vr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzxLq5pqnAdp4S8l1eSedL-AfRT6tZy10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204686556491-4gsp69v67dt168vtts3bq38sb5jok6vr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
