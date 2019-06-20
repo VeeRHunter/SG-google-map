@@ -16,7 +16,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { ToastService } from './toast.service';
 import { LoadingService } from './loading.service';
 import { MapServiceService } from './map-service.service';
-
+import { GoogleMaps } from '@ionic-native/google-maps/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 
 const firebaseConfig = {
@@ -48,7 +49,9 @@ firebase.initializeApp(firebaseConfig);
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     ToastService,
     LoadingService,
-    MapServiceService
+    MapServiceService,
+    GoogleMaps,
+    Geolocation,
   ],
   bootstrap: [AppComponent]
 })
